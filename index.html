@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="id" scroll-behavior="smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Extreme Offroad & Outbound Adventure | Paket Gathering Terbaik</title>
+    <meta name="description" content="Penyedia paket Outbound Training, Family Gathering, dan Offroad Adventure profesional di Indonesia. Keamanan terjamin, pengalaman tak terlupakan. Booking sekarang!">
+    <meta name="keywords" content="outbound bogor, paket offroad bandung, family gathering perusahaan, team building, wisata petualangan, sewa jeep">
+    <meta name="author" content="GO-OFFROAD Indonesia">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2E7D32">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.websiteanda.com/">
+    <meta property="og:title" content="Extreme Offroad & Outbound Adventure">
+    <meta property="og:description" content="Rasakan sensasi petualangan offroad dan outbound yang tak terlupakan bersama tim profesional kami.">
+    <meta property="og:image" content="https://placehold.co/1200x630/2e7d32/white?text=GO-OFFROAD+Adventure">
+    <meta property="og:locale" content="id_ID">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" media="print" onload="this.media='all'">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2E7D32;     /* Hijau Tua Alam */
+            --primary-dark: #1b5e20;      /* Hijau Lebih Tua untuk Hover */
+            --accent-color: #FF6D00;      /* Oranye Adventure */
+            --dark-text: #212529;
+            --light-bg: #f8f9fa;
+            --section-spacing: 6rem;      /* Spacing konsisten proporsional */
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --hover-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Utilities */
+        .section-padding { padding-block: var(--section-spacing); }
+        .bg-light-pattern { background-color: var(--light-bg); background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232e7d32' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+        .text-primary-custom { color: var(--primary-color) !important; }
+        .fw-extra-bold { font-weight: 800; }
+
+        /* Components */
+        .btn-custom-primary {
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            color: white; border: none; padding: 12px 35px; font-weight: 600;
+            border-radius: 50px; transition: all 0.3s ease;
+        }
+        .btn-custom-primary:hover { background: linear-gradient(45deg, var(--primary-dark), var(--primary-color)); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3); color: white;}
+
+        .btn-custom-accent {
+            background: linear-gradient(45deg, var(--accent-color), #ff8f00);
+            color: white; border: none; padding: 12px 35px; font-weight: 600;
+            border-radius: 50px; transition: all 0.3s ease;
+        }
+        .btn-custom-accent:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 109, 0, 0.3); color: white;}
+
+        /* Navbar */
+        .navbar { background-color: rgba(255,255,255,0.98) !important; backdrop-filter: blur(10px); padding-block: 15px; }
+        .nav-link { font-weight: 600; color: var(--dark-text) !important; padding: 0.5rem 1rem !important; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-color) !important; }
+        .navbar-brand i { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('aset/mobol.webp');
+            background-size: cover; background-position: center;
+            min-height: 100vh; display: flex; align-items: center; color: white;
+            padding-top: 80px; /* Offset for fixed navbar */
+        }
+
+        /* Cards (Service, Product, News) */
+        .hover-card {
+            border: none; border-radius: 16px; box-shadow: var(--card-shadow);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); overflow: hidden;
+        }
+        .hover-card:hover { transform: translateY(-8px); box-shadow: var(--hover-shadow); }
+        
+        .service-icon-box {
+            width: 80px; height: 80px; background: rgba(46, 125, 50, 0.1);
+            color: var(--primary-color); border-radius: 50%; display: flex;
+            align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1.5rem;
+        }
+
+        /* Product Special Styling */
+        .product-card--featured { border: 2px solid var(--accent-color); transform: scale(1.02); z-index: 2; }
+        .product-header-featured { background: linear-gradient(45deg, var(--accent-color), #ff8f00); }
+
+        /* Gallery */
+        .gallery-img-wrapper { border-radius: 16px; overflow: hidden; height: 280px; }
+        .gallery-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .gallery-img-wrapper:hover .gallery-img { transform: scale(1.1); }
+
+        /* Testimonial */
+        .testimonial-card { background: white; padding: 40px; border-radius: 20px; box-shadow: var(--card-shadow); position: relative; }
+        .testimonial-quote-icon { font-size: 4rem; color: rgba(46, 125, 50, 0.1); position: absolute; top: 20px; left: 30px; }
+
+        /* Footer */
+        footer { background-color: #111; color: #bbb; }
+        footer a { color: #bbb; text-decoration: none; transition: 0.3s; }
+        footer a:hover { color: var(--accent-color); }
+
+        /* FAB (Floating Action Buttons) */
+        .fab-container {
+            position: fixed; bottom: 30px; right: 30px; z-index: 1050;
+            display: flex; flex-direction: column; gap: 15px;
+            align-items: center;
+        }
+        .btn-fab {
+            width: 55px; height: 55px; border-radius: 50%; border: none;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;
+        }
+        .btn-fab:hover { transform: scale(1.1); }
+        .btn-fab-wa { background: linear-gradient(45deg, #25D366, #128C7E); }
+        .btn-fab-up { background: rgba(33, 37, 41, 0.7); backdrop-filter: blur(5px); font-size: 1.5rem; opacity: 0; visibility: hidden; transform: translateY(20px); }
+        .btn-fab-up.show { opacity: 1; visibility: visible; transform: translateY(0); }
+
+        /* Mobile Adjustments for Proportionality */
+        @media (max-width: 768px) {
+            h1.display-3 { font-size: 2.8rem; }
+            h2 { font-size: 2rem; }
+            :root { --section-spacing: 4rem; } /* Reduce spacing on mobile */
+            .hero-section { text-align: center; background-position: 70% center; }
+            .fab-container { bottom: 20px; right: 20px; }
+            .btn-fab { width: 50px; height: 50px; font-size: 1.5rem; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "GO-OFFROAD Indonesia",
+      "image": "https://www.websiteanda.com/assets/images/hero-offroad.jpg",
+      "description": "Penyedia jasa Outbound Training dan Wisata Offroad Adventure profesional dengan standar keamanan tinggi.",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Alternatif Sentul No. 88",
+        "addressLocality": "Bogor",
+        "addressRegion": "Jawa Barat",
+        "postalCode": "16810",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-6.5971",
+        "longitude": "106.7973"
+      },
+      "telephone": "+6281234567890",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top shadow-sm" aria-label="Navigasi Utama">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-extra-bold d-flex align-items-center" href="#">
+                <i class="bi bi-tree-fill me-2 fs-2"></i> GO-OFFROAD
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center text-uppercase small ls-1">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-custom-accent rounded-pill px-4">Kontak Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-7">
+                    <h1 class="display-3 fw-extra-bold text-uppercase mb-4 leading-tight">
+                        Jelajahi Batas,<br>Pacu <span style="color:var(--accent-color); text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Adrenalin</span> Anda!
+                    </h1>
+                    <p class="lead mb-5 opacity-90 fs-5">Kami menghadirkan pengalaman Outbound Training dan Offroad Adventure yang aman, seru, dan berdampak positif bagi tim Anda.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                        <a href="#products" class="btn btn-custom-primary btn-lg shadow-lg">Lihat Pilihan Paket</a>
+                        <a href="https://wa.me/6281234567890" class="btn btn-outline-light btn-lg px-4 border-2 fw-bold rounded-pill">
+                            <i class="bi bi-whatsapp me-2"></i> Konsultasi Gratis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6 position-relative">
+                         <div class="position-absolute top-0 start-0 translate-middle bg-warning rounded-circle opacity-25" style="width: 200px; height: 200px; z-index: -1;"></div>
+                        <img src="aset/Pemandanganpuncakgunung.webp" 
+                             alt="Tim profesional GO-OFFROAD sedang briefing" 
+                             class="img-fluid rounded-4 shadow-lg position-relative z-1"
+                             width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h6 class="text-primary-custom text-uppercase fw-bold letter-spacing-2 mb-3">Tentang GO-OFFROAD</h6>
+                        <h2 class="fw-extra-bold mb-4">Mitra Petualangan Profesional Terpercaya Sejak 2015</h2>
+                        <p class="text-muted lead fs-6 mb-4">Lebih dari sekadar penyedia jasa, kami adalah partner strategis dalam mengembangkan potensi SDM melalui metode *experiential learning* di alam terbuka.</p>
+                        <div class="row g-3 mt-2 mb-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm border">
+                                    <i class="bi bi-shield-check fs-2 text-primary-custom me-3"></i>
+                                    <h5 class="mb-0 fw-bold fs-6">Certified Safety<br>Standard</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm border">
+                                    <i class="bi bi-people-fill fs-2 text-primary-custom me-3"></i>
+                                    <h5 class="mb-0 fw-bold fs-6">Professional<br>Facilitators</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-padding bg-light-pattern">
+            <div class="container">
+                <div class="text-center mb-5 mw-800 mx-auto">
+                    <h6 class="text-primary-custom text-uppercase fw-bold">Layanan Kami</h6>
+                    <h2 class="fw-extra-bold">Solusi Kegiatan Luar Ruang Terintegrasi</h2>
+                    <p class="text-muted">Kami merancang program yang disesuaikan dengan tujuan spesifik perusahaan atau grup Anda.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 d-flex">
+                        <div class="card hover-card text-center p-4 h-100 w-100 align-items-center">
+                            <div class="service-icon-box mb-4">
+                                <i class="bi bi-jeep"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">4x4 Offroad Adventure</h4>
+                            <p class="text-muted mb-0">Menjelajahi trek menantang (lumpur, batu, sungai) dengan armada Land Rover/Jeep terawat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex">
+                         <div class="card hover-card text-center p-4 h-100 w-100 align-items-center">
+                            <div class="service-icon-box mb-4">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Outbound Training</h4>
+                            <p class="text-muted mb-0">Program pengembangan tim (Team Building) yang fun namun penuh insight (berdampak).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex">
+                         <div class="card hover-card text-center p-4 h-100 w-100 align-items-center">
+                            <div class="service-icon-box mb-4">
+                                <i class="bi bi-water"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Rafting & Tubing</h4>
+                            <p class="text-muted mb-0">Arung jeram di sungai grade aman dengan peralatan keselamatan standar internasional.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex">
+                         <div class="card hover-card text-center p-4 h-100 w-100 align-items-center">
+                            <div class="service-icon-box mb-4">
+                                <i class="bi bi-fire"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Gathering & Camping</h4>
+                            <p class="text-muted mb-0">Paket lengkap menginap di alam (glamping/tenda) dengan acara kebersamaan dan api unggun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-dark text-white text-center position-relative overflow-hidden">
+            <img src="aset/panjang.webp" alt="Background Adventure" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50" loading="lazy">
+            <div class="container position-relative z-1">
+                <h2 class="fw-extra-bold display-5 mb-3">Siap Merasakan Bedanya?</h2>
+                <p class="lead mb-4 mw-600 mx-auto opacity-90">Jangan biarkan tim Anda jenuh. Segarkan kembali semangat mereka dengan petualangan yang sesungguhnya.</p>
+                <a href="https://wa.me/6281234567890" class="btn btn-custom-accent btn-lg rounded-pill shadow-lg">
+                    <i class="bi bi-whatsapp me-2"></i> Dapatkan Penawaran Spesial
+                </a>
+            </div>
+        </section>
+
+     <section id="products" class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5 mx-auto mw-800">
+            <h6 class="text-primary-custom text-uppercase fw-bold">Pilihan Paket Populer</h6>
+            <h2 class="fw-extra-bold">Investasi Terbaik untuk Tim Anda</h2>
+        </div>
+        <div class="row g-4 justify-content-center align-items-center">
+            
+            <div class="col-md-6 col-xl-4">
+                <div class="card hover-card h-100">
+                    <div class="card-header bg-white text-center py-4 border-bottom-0">
+                        <h4 class="fw-bold mb-0">Basic Offroad Trip</h4>
+                        <p class="text-muted small mb-0">Durasi Pendek (Half Day)</p>
+                    </div>
+                    <div class="card-body text-center px-4 px-lg-5 pb-5">
+                        <div class="display-4 fw-extra-bold text-primary-custom mb-3">
+                            <span class="fs-3 align-top">Rp</span>350k<span class="fs-6 text-muted">/pax</span>
+                        </div>
+                        <ul class="list-unstyled text-start mb-4 d-inline-block mx-auto">
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Unit Jeep 4x4 + BBM</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Profesional Driver</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> 1x Snack Box & Air Mineral</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Standar P3K</li>
+                            <li class="text-muted mb-3 d-flex align-items-center text-decoration-line-through"><i class="bi bi-x-circle-fill text-muted me-2 fs-5"></i> Makan Siang</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold py-2" data-bs-toggle="modal" data-bs-target="#modalBasic">Lihat Detail Paket</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card hover-card product-card--featured shadow-lg h-100">
+                    <div class="product-header-featured text-white text-center py-4 position-relative">
+                        <span class="badge bg-white text-dark position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-2 fw-bold shadow-sm">BEST SELLER</span>
+                        <h4 class="fw-bold mb-0">Fullboard Gathering</h4>
+                        <p class="small mb-0 opacity-90">All-in One Solution (1 Full Day)</p>
+                    </div>
+                    <div class="card-body text-center px-4 px-lg-5 pb-5 bg-white">
+                        <div class="display-4 fw-extra-bold text-accent-custom mb-3" style="color: var(--accent-color)">
+                            <span class="fs-3 align-top">Rp</span>750k<span class="fs-6 text-muted">/pax</span>
+                        </div>
+                        <ul class="list-unstyled text-start mb-4 d-inline-block mx-auto">
+                            <li class="mb-3 d-flex align-items-center fw-bold"><i class="bi bi-check-circle-fill text-warning me-2 fs-5"></i> SEMUA Benefit Basic Paket</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Program Outbound/Fun Games</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> 1x Makan Siang Prasmanan</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> 1x Coffee Break</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Dokumentasi Foto Softcopy</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Spanduk Kegiatan</li>
+                        </ul>
+                         <a href="#" class="btn btn-custom-accent w-100 rounded-pill fw-bold py-3 shadow" data-bs-toggle="modal" data-bs-target="#modalFullboard">Lihat Detail Lengkap</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card hover-card h-100">
+                    <div class="card-header bg-white text-center py-4 border-bottom-0">
+                        <h4 class="fw-bold mb-0">2D1N Camp & Adventure</h4>
+                        <p class="text-muted small mb-0">Menginap 2 Hari 1 Malam</p>
+                    </div>
+                    <div class="card-body text-center px-4 px-lg-5 pb-5">
+                        <div class="display-4 fw-extra-bold text-primary-custom mb-3">
+                            <span class="fs-3 align-top">Rp</span>1.2jt<span class="fs-6 text-muted">/pax</span>
+                        </div>
+                        <ul class="list-unstyled text-start mb-4 d-inline-block mx-auto">
+                            <li class="mb-3 d-flex align-items-center fw-bold"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> SEMUA Benefit Fullboard</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Akomodasi Tenda/Glamping</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Total 3x Makan, 2x Snack</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Api Unggun & Barbeque</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i> Acara Hiburan Malam</li>
+                        </ul>
+                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold py-2" data-bs-toggle="modal" data-bs-target="#modalCamp">Lihat Detail Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-muted mt-4 small">*Harga dapat berubah sewaktu-waktu dan menyesuaikan jumlah peserta & lokasi.</p>
+    </div>
+</section>
+
+<div class="modal fade" id="modalBasic" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title fw-bold" id="modalBasicLabel">Detail: Basic Offroad Trip</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Paket ini cocok untuk pemula yang ingin merasakan sensasi offroad singkat tanpa menginap.</p>
+        <h6>Itinerary Singkat:</h6>
+        <ul>
+            <li>08:00 - Meeting Point</li>
+            <li>08:30 - Persiapan & Briefing</li>
+            <li>09:00 - Mulai Offroad Track A</li>
+            <li>11:00 - Istirahat & Snack</li>
+            <li>12:00 - Kembali ke Meeting Point</li>
+        </ul>
+        <div class="alert alert-info small"><i class="bi bi-info-circle"></i> Minimal pemesanan: 1 Jeep (3-4 Orang).</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="#contact" class="btn btn-primary">Booking Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalFullboard" tabindex="-1" aria-labelledby="modalFullboardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-white" style="background-color: var(--accent-color, #fd7e14);"> <h5 class="modal-title fw-bold" id="modalFullboardLabel">Detail: Fullboard Gathering</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Paling Laris!</strong> Solusi lengkap untuk Company Gathering atau Family Gathering.</p>
+        <h6>Fasilitas Tambahan:</h6>
+        <ul>
+            <li>Instruktur Games Profesional</li>
+            <li>Sound System Standard</li>
+            <li>Makan Siang Prasmanan (Menu Nusantara)</li>
+            <li>Dokumentasi Video Reels (Add-on)</li>
+        </ul>
+        <p class="small text-muted">Durasi kegiatan: 08:00 - 16:00 WIB.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="#contact" class="btn btn-warning fw-bold text-white">Booking Paket Ini</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCamp" tabindex="-1" aria-labelledby="modalCampLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title fw-bold" id="modalCampLabel">Detail: 2D1N Camp & Adventure</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Pengalaman tak terlupakan menginap di alam terbuka dengan fasilitas nyaman.</p>
+        <h6>Fasilitas Tenda:</h6>
+        <ul>
+            <li>Tenda Dome / Glamping Tent</li>
+            <li>Matras & Sleeping Bag</li>
+            <li>Lampu Penerangan</li>
+            <li>Akses Toilet Bersih & Air Hangat</li>
+        </ul>
+        <h6>Highlight Malam:</h6>
+        <p class="mb-0">Api unggun bersama, jagung bakar, dan hiburan musik akustik di bawah bintang.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="#contact" class="btn btn-primary">Booking Camping</a>
+      </div>
+    </div>
+  </div>
+</div>
+        <section id="gallery" class="section-padding bg-light-pattern">
+            <div class="container">
+                <div class="text-center mb-5 mx-auto mw-800">
+                    <h6 class="text-primary-custom text-uppercase fw-bold">Portofolio Kami</h6>
+                    <h2 class="fw-extra-bold">Momen Keseruan di Lapangan</h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-img-wrapper shadow-sm">
+                             <img src="aset/AksiJeepmelintasilumpur.webp" alt="Mobil offroad melintasi sungai" class="gallery-img" width="600" height="400" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                         <div class="gallery-img-wrapper shadow-sm">
+                             <img src="aset/FunOffroad.webp" alt="Kegiatan team building membentuk lingkaran" class="gallery-img" width="600" height="400" loading="lazy">
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6">
+                         <div class="gallery-img-wrapper shadow-sm">
+                             <img src="aset/CampingGround.webp" alt="Suasana camping malam hari dengan api unggun" class="gallery-img" width="600" height="400" loading="lazy">
+                        </div>
+                    </div>
+                     <div class="col-lg-6 col-md-6">
+                         <div class="gallery-img-wrapper shadow-sm" style="height: 350px;">
+                             <img src="aset/Pemandanganpuncakgunung.webp" alt="Foto bersama grup perusahaan besar setelah kegiatan" class="gallery-img" width="800" height="500" loading="lazy">
+                        </div>
+                    </div>
+                     <div class="col-lg-6 col-md-12">
+                         <div class="gallery-img-wrapper shadow-sm" style="height: 350px;">
+                             <img src="aset/Adventure2.webp" alt="Keseruan arung jeram rafting" class="gallery-img" width="800" height="500" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 mx-auto mw-800">
+                    <h6 class="text-primary-custom text-uppercase fw-bold">Kata Mereka</h6>
+                    <h2 class="fw-extra-bold">Klien yang Bahagia</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div id="carouselTestimonial" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner pb-5">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-card mx-2 mx-lg-4">
+                                        <i class="bi bi-quote testimonial-quote-icon"></i>
+                                        <div class="row align-items-center">
+                                            <div class="col-md-3 text-center mb-4 mb-md-0">
+                                                <img src="aset/BudiSantosoS.T..webp" alt="Foto Budi Santoso" class="rounded-circle shadow-sm img-fluid" width="120" height="120" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="mb-3 text-warning">
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <p class="fst-italic fs-5 mb-4">"Sangat luar biasa! Vendor paling profesional yang pernah kami pakai untuk gathering kantor. Tim fasilitatornya sangat enerjik dan track offroad-nya benar-benar memacu adrenalin tapi tetap aman. Bravo GO-OFFROAD!"</p>
+                                                <h5 class="fw-bold mb-0">Budi Santoso, S.T.</h5>
+                                                <p class="text-muted small mb-0">HR Manager, PT. Teknologi Maju Bersama</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-card mx-2 mx-lg-4">
+                                        <i class="bi bi-quote testimonial-quote-icon"></i>
+                                        <div class="row align-items-center">
+                                            <div class="col-md-3 text-center mb-4 mb-md-0">
+                                                <img src="aset/SitiAminah.webp" alt="Foto Siti Aminah" class="rounded-circle shadow-sm img-fluid" width="120" height="120" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="mb-3 text-warning">
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <p class="fst-italic fs-5 mb-4">"Anak-anak sangat menikmati family gathering tahun ini. Layanannya ramah anak, makanannya enak, dan rundown acara teratur rapi dari awal sampai akhir. Terima kasih atas pelayanan primanya."</p>
+                                                <h5 class="fw-bold mb-0">Siti Aminah</h5>
+                                                <p class="text-muted small mb-0">Ketua Panitia Family Gathering Bank BUMN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center gap-3 mt-4">
+                                <button class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev" aria-label="Testimoni Sebelumnya">
+                                    <i class="bi bi-arrow-left fs-4"></i>
+                                </button>
+                                <button class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next" aria-label="Testimoni Selanjutnya">
+                                    <i class="bi bi-arrow-right fs-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-padding bg-light-pattern">
+            <div class="container">
+                <div class="text-center mb-5 mx-auto mw-800">
+                    <h6 class="text-primary-custom text-uppercase fw-bold">FAQ</h6>
+                    <h2 class="fw-extra-bold">Pertanyaan Sering Diajukan</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionFAQ">
+                            <div class="accordion-item border-0 mb-2 rounded-4 overflow-hidden">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button fw-bold py-4 px-4 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Apakah kegiatan ini aman untuk pemula yang belum pernah offroad?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-4 pb-4 pt-0 bg-white text-muted">
+                                        <strong>Sangat aman.</strong> Keselamatan adalah prioritas utama kami. Semua unit kendaraan dirawat secara rutin, dan setiap perjalanan didampingi oleh driver profesional yang berpengalaman di medan offroad. Kami juga menyediakan briefing keselamatan dan asuransi untuk seluruh peserta.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-2 rounded-4 overflow-hidden">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Berapa minimal dan maksimal jumlah peserta?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-4 pb-4 pt-0 bg-white text-muted">
+                                        Untuk paket Offroad only, minimal pemesanan adalah 1 unit Jeep (kapasitas 3-4 orang dewasa). Untuk paket Outbound/Gathering fullboard, minimal peserta adalah 20 orang. Kami mampu menangani grup besar hingga 300+ peserta sekaligus.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-2 rounded-4 overflow-hidden">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4 px-4 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Di mana lokasi kegiatan biasanya dilakukan?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-4 pb-4 pt-0 bg-white text-muted">
+                                        Basecamp utama kami berada di area Bogor (Sentul, Puncak, Pancawati) dan Bandung (Lembang, Pangalengan). Namun, kami juga fleksibel untuk mengadakan kegiatan di lokasi lain di Jawa Barat sesuai permintaan klien.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-primary-custom text-white text-center" style="background-color: var(--primary-color);">
+            <div class="container py-4">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-8 text-lg-start text-center mb-4 mb-lg-0">
+                        <h2 class="fw-extra-bold mb-2">Masih Bingung Menentukan Paket?</h2>
+                        <p class="lead mb-0 opacity-90">Diskusikan kebutuhan budget dan tujuan acara Anda dengan tim marketing kami. Kami siap presentasi ke kantor Anda.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end text-center">
+                        <a href="tel:+6281234567890" class="btn btn-light text-primary-custom fw-bold btn-lg rounded-pill shadow px-5">
+                            <i class="bi bi-telephone-fill me-2"></i> Hubungi Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="news" class="section-padding">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+            <div>
+                <h6 class="text-primary-custom text-uppercase fw-bold">Blog & Artikel</h6>
+                <h2 class="fw-extra-bold mb-0">Tips & Informasi Terbaru</h2>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <article class="card hover-card h-100 bg-white border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="aset/TimCorporateGathering.webp" class="card-img-top" alt="Ilustrasi tips keamanan offroad" width="600" height="400" loading="lazy" style="object-fit: cover;">
+                        <span class="badge bg-accent-custom text-white position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill" style="background-color: var(--accent-color);">Tips</span>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 15 Januari 2024</div>
+                        <h5 class="card-title fw-bold mb-3">
+                            <a href="blog1.html" class="text-decoration-none text-dark stretched-link">5 Hal Penting Persiapan Sebelum Wisata Offroad</a>
+                        </h5>
+                        <p class="card-text text-muted mb-4">Mengetahui perlengkapan apa saja yang wajib dibawa agar perjalanan Anda tetap aman dan nyaman...</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card hover-card h-100 bg-white border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="aset/Adventure.webp" class="card-img-top" alt="Ilustrasi manfaat outbound" width="600" height="400" loading="lazy" style="object-fit: cover;">
+                        <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">Edukasi</span>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 10 Januari 2024</div>
+                        <h5 class="card-title fw-bold mb-3">
+                            <a href="blog2.html" class="text-decoration-none text-dark stretched-link">Mengapa Perusahaan Perlu Outbound Rutin?</a>
+                        </h5>
+                        <p class="card-text text-muted mb-4">Simak kajian bagaimana aktivitas luar ruang dapat meningkatkan produktivitas dan soliditas tim kerja...</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card hover-card h-100 bg-white border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="aset/AdventureOffroad.webp" class="card-img-top" alt="Ilustrasi jalur offroad" width="600" height="400" loading="lazy" style="object-fit: cover;">
+                        <span class="badge bg-accent-custom text-white position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill" style="background-color: var(--accent-color);">Destinasi</span>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 5 Januari 2024</div>
+                        <h5 class="card-title fw-bold mb-3">
+                            <a href="blog3.html" class="text-decoration-none text-dark stretched-link">Jalur Offroad Paling Hits di Bogor 2024</a>
+                        </h5>
+                        <p class="card-text text-muted mb-4">Ulasan lengkap mengenai rute Cisadon dan Citeko yang menawarkan pemandangan spektakuler...</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="section-padding bg-light-pattern">
+            <div class="container">
+                <div class="row g-5 align-items-lg-center">
+                    <div class="col-lg-6">
+                        <h6 class="text-primary-custom text-uppercase fw-bold">Hubungi Kami</h6>
+                        <h2 class="fw-extra-bold mb-4">Siap Membantu Rencana Anda</h2>
+                        <p class="text-muted lead mb-5">Isi formulir di bawah ini untuk mendapatkan penawaran resmi atau sekadar bertanya. Tim kami akan merespons secepatnya.</p>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-custom-primary p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="bi bi-whatsapp fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <h5 class="fw-bold mb-1">Chat WhatsApp (Fast Response)</h5>
+                                <p class="mb-0"><a href="https://wa.me/6281234567890" class="text-decoration-none text-dark fs-5">+62 812-3456-7890</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-custom-accent p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="bi bi-envelope-fill fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <h5 class="fw-bold mb-1">Email Inquiry</h5>
+                                <p class="mb-0"><a href="mailto:info@go-offroad.com" class="text-decoration-none text-dark fs-5">info@go-offroad.com</a></p>
+                            </div>
+                        </div>
+                         <div class="d-flex">
+                            <div class="flex-shrink-0 bg-dark text-white p-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="bi bi-geo-alt-fill fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <h5 class="fw-bold mb-1">Kantor Pemasaran</h5>
+                                <p class="mb-0 text-muted">Jl. Alternatif Sentul No. 88, Bogor, Jawa Barat</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-lg rounded-4 overflow-hidden p-4 p-md-5 bg-white">
+                            <h3 class="fw-bold mb-4">Kirim Pesan</h3>
+                            <form action="#" method="POST" aria-label="Formulir Kontak">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control bg-light border-0" id="floatingName" placeholder="Nama Lengkap" required>
+                                    <label for="floatingName">Nama Lengkap / Perusahaan</label>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                         <div class="form-floating">
+                                            <input type="tel" class="form-control bg-light border-0" id="floatingPhone" placeholder="Nomor WhatsApp" required>
+                                            <label for="floatingPhone">No. WhatsApp</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control bg-light border-0" id="floatingEmail" placeholder="name@example.com" required>
+                                            <label for="floatingEmail">Alamat Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select bg-light border-0" id="floatingSelect" aria-label="Pilih Jenis Layanan">
+                                        <option selected disabled value="">Pilih Rencana Layanan</option>
+                                        <option value="1">Offroad Adventure Only</option>
+                                        <option value="2">Fullboard Gathering (1 Hari)</option>
+                                        <option value="3">Menginap (Camping/Villa)</option>
+                                        <option value="4">Lainnya / Konsultasi</option>
+                                    </select>
+                                    <label for="floatingSelect">Jenis Kegiatan</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <textarea class="form-control bg-light border-0" placeholder="Tulis pesan Anda di sini" id="floatingMessage" style="height: 120px"></textarea>
+                                    <label for="floatingMessage">Pesan Tambahan (Estimasi peserta, tanggal, dll)</label>
+                                </div>
+                                <button type="submit" class="btn btn-custom-primary w-100 btn-lg rounded-pill shadow py-3 fw-bold">Kirim Permintaan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                 <div class="row mt-5">
+                    <div class="col-12">
+                         <div class="ratio ratio-21x9 shadow-sm rounded-4 overflow-hidden">
+                            <iframe title="Lokasi Kantor GO-OFFROAD" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126881.60723828673!2d106.73843734335937!3d-6.597139399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b7d7553611%3A0x301576d14feb9e0!2sBogor%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1708330000000!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-4 mb-4">
+                    <a class="navbar-brand fs-3 fw-extra-bold d-flex align-items-center text-white mb-4" href="#">
+                        <i class="bi bi-tree-fill text-primary-custom me-2 fs-2"></i> GO-OFFROAD
+                    </a>
+                    <p class="pe-lg-4 opacity-75">Partner resmi petualangan Anda. Kami berkomitmen menghadirkan pengalaman kegiatan alam terbuka yang aman, profesional, dan berkesan mendalam.</p>
+                    <div class="mt-4 d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 mb-4">
+                    <h5 class="text-white fw-bold mb-4">Navigasi</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 opacity-75">
+                        <li><a href="#hero">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#products">Paket Harga</a></li>
+                        <li><a href="#gallery">Portofolio</a></li>
+                    </ul>
+                </div>
+                 <div class="col-6 col-lg-2 mb-4">
+                    <h5 class="text-white fw-bold mb-4">Dukungan</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 opacity-75">
+                        <li><a href="#contact">Hubungi Kami</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="text-white fw-bold mb-4">Info Kontak</h5>
+                     <ul class="list-unstyled d-flex flex-column gap-3 opacity-75">
+                        <li class="d-flex align-items-start"><i class="bi bi-geo-alt text-primary-custom me-3 fs-5"></i> Jl. Raya Bogor No. 123, Sentul, Jawa Barat, Indonesia</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-whatsapp text-primary-custom me-3 fs-5"></i> +62 812-3456-7890</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-envelope text-primary-custom me-3 fs-5"></i> info@go-offroad.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4 opacity-50">
+            <div class="row align-items-center text-center text-md-start opacity-75 small">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    © 2024 GO-OFFROAD Indonesia. All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Dibuat dengan <i class="bi bi-heart-fill text-danger mx-1"></i> untuk Petualang Indonesia.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fab-container">
+        <button onclick="scrollToTop()" id="btnBackToTop" class="btn-fab btn-fab-up shadow" aria-label="Kembali ke atas halaman">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <a href="https://wa.me/6281234567890?text=Halo%20GO-OFFROAD%2C%20saya%20tertarik%20dengan%20paket%20petualangan%20Anda." target="_blank" rel="noopener noreferrer" class="btn-fab btn-fab-wa shadow-lg" aria-label="Chat WhatsApp Sekarang">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <script>
+        // 1. Logika untuk Tombol Back to Top
+        const btnBackToTop = document.getElementById("btnBackToTop");
+        const navBar = document.getElementById("mainNavbar");
+
+        window.onscroll = function() {
+            scrollFunction();
+            navbarScrollEffect();
+        };
+
+        function scrollFunction() {
+            // Tampilkan tombol jika scroll lebih dari 300px
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnBackToTop.classList.add("show");
+            } else {
+                btnBackToTop.classList.remove("show");
+            }
+        }
+
+        function scrollToTop() {
+            // Scroll halus ke atas
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // 2. Efek Bayangan pada Navbar saat Scroll
+        function navbarScrollEffect() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navBar.classList.add("shadow");
+            } else {
+                navBar.classList.remove("shadow-sm"); // Hapus shadow-sm bawaan di awal
+                navBar.classList.remove("shadow");
+            }
+        }
+
+        // 3. Menutup Navbar Mobile secara otomatis setelah link diklik
+        const navLinks = document.querySelectorAll('.nav-item:not(.dropdown) .nav-link');
+        const navbarCollapse = document.getElementById('navbarNav');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
