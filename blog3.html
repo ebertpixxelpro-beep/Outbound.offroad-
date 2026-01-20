@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
-    <title>5 Hal Penting Persiapan Sebelum Wisata Offroad Agar Aman & Seru | GO-OFFROAD</title>
-    <meta name="description" content="Jangan sampai liburan gagal karena salah kostum! Simak panduan lengkap persiapan wisata offroad, mulai dari outfit, perlengkapan medis, hingga tips keamanan.">
-    <meta name="keywords" content="persiapan offroad, tips wisata offroad, outfit offroad wanita, perlengkapan offroad, safety offroad bogor">
-    <meta name="author" content="GO-OFFROAD Team">
+    <title>5 Jalur Offroad Paling Hits di Bogor 2024: Sentul Hingga Puncak | MALANG-OFFROAD</title>
+    <meta name="description" content="Ingin menjajal trek offroad di Bogor? Simak ulasan 5 jalur paling hits 2024 mulai dari Hambalang, Citeureup, hingga hutan Bodogol. Cek tingkat kesulitannya di sini!">
+    <meta name="keywords" content="jalur offroad bogor, offroad sentul, offroad puncak, sewa jeep bogor, wisata offroad bogor, trek offroad 4x4">
+    <meta name="author" content="MALANG-OFFROAD Team">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#2E7D32">
+    
+    <meta name="geo.region" content="ID-JB">
+    <meta name="geo.placename" content="Bogor">
 
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.websiteanda.com/blog/persiapan-wisata-offroad">
-    <meta property="og:title" content="5 Hal Penting Persiapan Sebelum Wisata Offroad">
-    <meta property="og:description" content="Panduan lengkap agar petualangan offroad Anda aman dan nyaman. Cek checklist-nya di sini!">
-    <meta property="og:image" content="aset/TimCorporateGathering.webp">
+    <meta property="og:url" content="https://www.websiteanda.com/blog/jalur-offroad-bogor">
+    <meta property="og:title" content="5 Jalur Offroad Paling Hits di Bogor 2024">
+    <meta property="og:description" content="Review lengkap jalur Hambalang, Telaga Saat, hingga Bodogol. Temukan rute terbaik untuk petualangan Anda.">
+    <meta property="og:image" content="aset/AdventureOffroad.webp">
     <meta property="article:published_time" content="2024-01-15T08:00:00+07:00">
 
     <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-        /* --- STYLE DASAR (SAMA DENGAN INDEX) --- */
+        /* --- STYLE DASAR --- */
         :root {
             --primary-color: #2E7D32;
             --primary-dark: #1b5e20;
@@ -48,12 +58,54 @@
         footer a { color: #bbb; text-decoration: none; transition: 0.3s; }
         footer a:hover { color: var(--accent-color); }
 
-        /* FAB */
-        .fab-container { position: fixed; bottom: 30px; right: 30px; z-index: 1050; display: flex; flex-direction: column; gap: 15px; align-items: center; }
-        .btn-fab { width: 55px; height: 55px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; cursor: pointer; }
-        .btn-fab:hover { transform: scale(1.1); }
-        .btn-fab-wa { background: linear-gradient(45deg, #25D366, #128C7E); }
-        .btn-fab-up { background: rgba(33, 37, 41, 0.7); backdrop-filter: blur(5px); font-size: 1.5rem; opacity: 0; visibility: hidden; transform: translateY(20px); }
+        /* --- FAB (FLOATING ACTION BUTTON) OPTIMIZED --- */
+        .fab-container { 
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px; 
+            z-index: 1050; 
+            display: flex; 
+            flex-direction: column; /* Menyusun vertikal: Atas (BackToTop), Bawah (WA) */
+            gap: 15px; 
+            align-items: center; 
+        }
+        .btn-fab { 
+            width: 55px; 
+            height: 55px; 
+            border-radius: 50%; 
+            border: none; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 1.8rem; 
+            color: white; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+            transition: all 0.3s; 
+            cursor: pointer; 
+            text-decoration: none;
+        }
+        .btn-fab:hover { transform: scale(1.1); color: white; }
+        
+        /* Animasi Pulse untuk WA agar menarik perhatian */
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .btn-fab-wa { 
+            background: linear-gradient(45deg, #25D366, #128C7E); 
+            animation: pulse-green 2s infinite; /* Mengaktifkan animasi */
+        }
+        
+        .btn-fab-up { 
+            background: rgba(33, 37, 41, 0.7); 
+            backdrop-filter: blur(5px); 
+            font-size: 1.5rem; 
+            opacity: 0; 
+            visibility: hidden; 
+            transform: translateY(20px); 
+            order: -1; /* Memastikan tombol UP berada di ATAS tombol WA secara visual */
+        }
         .btn-fab-up.show { opacity: 1; visibility: visible; transform: translateY(0); }
 
         /* --- STYLE KHUSUS BLOG DETAIL --- */
@@ -61,6 +113,7 @@
         .blog-content { font-family: 'Merriweather', serif; font-size: 1.1rem; line-height: 1.9; color: #333; }
         .blog-content h2 { font-family: 'Montserrat', sans-serif; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-dark); font-size: 1.8rem; }
         .blog-content h3 { font-family: 'Montserrat', sans-serif; margin-top: 2rem; margin-bottom: 0.8rem; color: #444; font-size: 1.4rem; }
+        /* PageSpeed: Aspect Ratio pada CSS untuk mencegah Layout Shift (CLS) */
         .blog-content img { border-radius: 12px; margin-block: 1.5rem; width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         .img-caption { font-size: 0.85rem; color: #6c757d; text-align: center; margin-top: -1rem; display: block; font-style: italic; }
 
@@ -87,7 +140,7 @@
         .author-box { background: white; border: 1px solid #eee; padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 20px; margin-top: 3rem; }
         .author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
 
-        /* Hover Card Effect (Untuk Artikel Terkait) */
+        /* Hover Card Effect */
         .hover-card { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
         .hover-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0,0,0,0.12); }
 
@@ -102,12 +155,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "5 Hal Penting Persiapan Sebelum Wisata Offroad",
-      "image": "https://www.websiteanda.com/aset/TimCorporateGathering.webp",
-      "author": { "@type": "Person", "name": "Tim Safety GO-OFFROAD" },
-      "publisher": { "@type": "Organization", "name": "GO-OFFROAD Indonesia", "logo": { "@type": "ImageObject", "url": "https://www.websiteanda.com/logo.png" } },
+      "headline": "5 Jalur Offroad Paling Hits di Bogor 2024",
+      "alternativeHeadline": "Panduan Jalur Offroad Sentul, Puncak, dan Hambalang",
+      "image": "https://www.websiteanda.com/aset/AdventureOffroad.webp",
+      "author": { "@type": "Person", "name": "Tim Safety MALANG-OFFROAD" },
+      "publisher": { "@type": "Organization", "name": "MALANG-OFFROAD Indonesia", "logo": { "@type": "ImageObject", "url": "https://www.websiteanda.com/logo.png" } },
       "datePublished": "2024-01-15",
-      "dateModified": "2024-01-15"
+      "dateModified": "2024-01-15",
+      "description": "Ulasan lengkap 5 jalur offroad terbaik di Bogor mulai dari Hambalang hingga Bodogol."
     }
     </script>
 </head>
@@ -117,7 +172,7 @@
     <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" href="index.html">
-                <i class="bi bi-tree-fill me-2 fs-2"></i> GO-OFFROAD
+                <i class="bi bi-tree-fill me-2 fs-2"></i> MALANG-OFFROAD
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -162,7 +217,9 @@
                         <figure class="mb-4">
                             <img src="aset/AdventureOffroad.webp" 
                                  alt="Petualangan offroad di jalur Bogor yang menantang" 
-                                 class="img-fluid rounded-4 shadow w-100" width="800" height="450">
+                                 class="img-fluid rounded-4 shadow w-100" 
+                                 width="800" height="450"
+                                 fetchpriority="high">
                             <figcaption class="img-caption mt-2">Menembus kabut dan jalur berlumpur di kawasan Bogor menjadi magnet utama para offroader.</figcaption>
                         </figure>
                     </div>
@@ -297,7 +354,7 @@
                                 <i class="bi bi-geo-alt-fill fs-1 text-primary-custom"></i>
                             </div>
                             <div>
-                                <h5 class="fw-bold mb-1">Explore Team GO-OFFROAD</h5>
+                                <h5 class="fw-bold mb-1">Explore Team MALANG-OFFROAD</h5>
                                 <p class="text-muted small mb-2 text-uppercase ls-1">Divisi Riset Destinasi & Jalur</p>
                                 <p class="mb-0 small">Kami menjelajahi setiap sudut hutan dan perbukitan di Bogor untuk memastikan setiap rute yang kami tawarkan memberikan pengalaman yang berkesan dan aman bagi pelanggan.</p>
                             </div>
@@ -307,7 +364,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="section-padding bg-light-pattern">
             <div class="container">
                 <div class="row justify-content-center">
@@ -324,7 +381,7 @@
                                     <div class="card-body p-4">
                                         <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 10 Januari 2024</div>
                                         <h5 class="card-title fw-bold mb-3">
-                                            <a href="#" class="text-decoration-none text-dark stretched-link">Mengapa Perusahaan Perlu Outbound Rutin?</a>
+                                            <a href="blog1.html" class="text-decoration-none text-dark stretched-link">Mengapa Perusahaan Perlu Outbound Rutin?</a>
                                         </h5>
                                         <p class="card-text text-muted small mb-0">Simak kajian bagaimana aktivitas luar ruang dapat meningkatkan produktivitas...</p>
                                     </div>
@@ -340,7 +397,7 @@
                                     <div class="card-body p-4">
                                         <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 5 Januari 2024</div>
                                         <h5 class="card-title fw-bold mb-3">
-                                            <a href="#" class="text-decoration-none text-dark stretched-link">Jalur Offroad Paling Hits di Bogor 2024</a>
+                                            <a href="blog2.html" class="text-decoration-none text-dark stretched-link">Jalur Offroad Paling Hits di Bogor 2024</a>
                                         </h5>
                                         <p class="card-text text-muted small mb-0">Ulasan lengkap mengenai rute Cisadon dan Citeko yang menawarkan pemandangan...</p>
                                     </div>
@@ -359,7 +416,7 @@
             <div class="row g-4 justify-content-between">
                 <div class="col-lg-4 mb-4">
                     <a class="navbar-brand fs-3 fw-bold d-flex align-items-center text-white mb-4" href="#">
-                        <i class="bi bi-tree-fill text-primary-custom me-2 fs-2"></i> GO-OFFROAD
+                        <i class="bi bi-tree-fill text-primary-custom me-2 fs-2"></i> MALANG-OFFROAD
                     </a>
                     <p class="pe-lg-4 opacity-75">Partner resmi petualangan Anda. Aman, Profesional, dan Berkesan.</p>
                 </div>
@@ -382,13 +439,13 @@
                     <h5 class="text-white fw-bold mb-4">Kontak</h5>
                      <ul class="list-unstyled d-flex flex-column gap-3 opacity-75">
                         <li class="d-flex align-items-center"><i class="bi bi-whatsapp text-primary-custom me-3 fs-5"></i> +62 812-3456-7890</li>
-                        <li class="d-flex align-items-center"><i class="bi bi-envelope text-primary-custom me-3 fs-5"></i> info@go-offroad.com</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-envelope text-primary-custom me-3 fs-5"></i> info@MALANG-OFFROAD.com</li>
                     </ul>
                 </div>
             </div>
             <hr class="border-secondary my-4 opacity-50">
             <div class="row align-items-center text-center text-md-start opacity-75 small">
-                <div class="col-12">© 2024 GO-OFFROAD Indonesia. All Rights Reserved.</div>
+                <div class="col-12">© 2024 MALANG-OFFROAD Indonesia. All Rights Reserved.</div>
             </div>
         </div>
     </footer>
@@ -397,7 +454,8 @@
         <button onclick="scrollToTop()" id="btnBackToTop" class="btn-fab btn-fab-up shadow" aria-label="Kembali ke atas">
             <i class="bi bi-arrow-up"></i>
         </button>
-        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20sudah%20baca%20artikel%20Persiapan%20Offroad%2C%20mau%20tanya%20paketnya." target="_blank" class="btn-fab btn-fab-wa shadow-lg" aria-label="Chat WhatsApp">
+        
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20paket%20offroad%20dari%20artikel%20Jalur%20Bogor." target="_blank" class="btn-fab btn-fab-wa shadow-lg" aria-label="Chat WhatsApp">
             <i class="bi bi-whatsapp"></i>
         </a>
     </div>

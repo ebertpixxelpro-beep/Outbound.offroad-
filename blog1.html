@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
-    <title>5 Hal Penting Persiapan Sebelum Wisata Offroad Agar Aman & Seru | GO-OFFROAD</title>
-    <meta name="description" content="Jangan sampai liburan gagal karena salah kostum! Simak panduan lengkap persiapan wisata offroad, mulai dari outfit, perlengkapan medis, hingga tips keamanan.">
-    <meta name="keywords" content="persiapan offroad, tips wisata offroad, outfit offroad wanita, perlengkapan offroad, safety offroad bogor">
-    <meta name="author" content="GO-OFFROAD Team">
+    <title>5 Hal Penting Persiapan Sebelum Wisata Offroad Agar Aman & Seru | MALANG-OFFROAD</title>
+    <meta name="description" content="Panduan lengkap persiapan wisata offroad agar liburan aman. Cek outfit, perlengkapan medis, hingga tips keamanan di sini. Jangan sampai salah kostum!">
+    <meta name="keywords" content="persiapan offroad, tips wisata offroad, outfit offroad wanita, perlengkapan offroad, safety offroad bogor, malang offroad">
+    <meta name="author" content="MALANG-OFFROAD Team">
+    
+    <link rel="canonical" href="https://www.websiteanda.com/blog/persiapan-wisata-offroad">
+
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#2E7D32">
 
@@ -15,12 +18,15 @@
     <meta property="og:url" content="https://www.websiteanda.com/blog/persiapan-wisata-offroad">
     <meta property="og:title" content="5 Hal Penting Persiapan Sebelum Wisata Offroad">
     <meta property="og:description" content="Panduan lengkap agar petualangan offroad Anda aman dan nyaman. Cek checklist-nya di sini!">
-    <meta property="og:image" content="aset/TimCorporateGathering.webp">
+    <meta property="og:image" content="https://www.websiteanda.com/aset/TimCorporateGathering.webp">
     <meta property="article:published_time" content="2024-01-15T08:00:00+07:00">
+    <meta property="article:author" content="MALANG-OFFROAD Team">
 
-    <link rel="icon" href="favicon.ico" sizes="any">
-    
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="icon" href="favicon.ico" sizes="any"> <link rel="icon" href="aset/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="aset/icon-192.png" type="image/png" sizes="192x192"> <link rel="apple-touch-icon" href="aset/apple-touch-icon.png"> <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -41,17 +47,26 @@
         .btn-custom-accent:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255,109,0,0.3); color: white; }
         
         /* Navbar & Footer */
-        .navbar { background-color: rgba(255,255,255,0.98) !important; backdrop-filter: blur(10px); padding-block: 15px; }
+        .navbar { background-color: rgba(255,255,255,0.98) !important; backdrop-filter: blur(10px); padding-block: 15px; transition: all 0.3s ease; }
         .nav-link { font-weight: 600; color: var(--dark-text) !important; transition: color 0.3s; }
         .nav-link:hover { color: var(--primary-color) !important; }
         footer { background-color: #111; color: #bbb; }
         footer a { color: #bbb; text-decoration: none; transition: 0.3s; }
         footer a:hover { color: var(--accent-color); }
 
-        /* FAB */
-        .fab-container { position: fixed; bottom: 30px; right: 30px; z-index: 1050; display: flex; flex-direction: column; gap: 15px; align-items: center; }
-        .btn-fab { width: 55px; height: 55px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; cursor: pointer; }
-        .btn-fab:hover { transform: scale(1.1); }
+        /* FAB (Floating Action Button) - Dioptimalkan Z-Index dan Posisi */
+        .fab-container { 
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px; 
+            z-index: 9999; /* Z-Index Tinggi agar tidak tertutup */
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px; 
+            align-items: center; 
+        }
+        .btn-fab { width: 55px; height: 55px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; cursor: pointer; text-decoration: none; }
+        .btn-fab:hover { transform: scale(1.1); color: white; }
         .btn-fab-wa { background: linear-gradient(45deg, #25D366, #128C7E); }
         .btn-fab-up { background: rgba(33, 37, 41, 0.7); backdrop-filter: blur(5px); font-size: 1.5rem; opacity: 0; visibility: hidden; transform: translateY(20px); }
         .btn-fab-up.show { opacity: 1; visibility: visible; transform: translateY(0); }
@@ -102,12 +117,33 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.websiteanda.com/blog/persiapan-wisata-offroad"
+      },
       "headline": "5 Hal Penting Persiapan Sebelum Wisata Offroad",
-      "image": "https://www.websiteanda.com/aset/TimCorporateGathering.webp",
-      "author": { "@type": "Person", "name": "Tim Safety GO-OFFROAD" },
-      "publisher": { "@type": "Organization", "name": "GO-OFFROAD Indonesia", "logo": { "@type": "ImageObject", "url": "https://www.websiteanda.com/logo.png" } },
-      "datePublished": "2024-01-15",
-      "dateModified": "2024-01-15"
+      "description": "Jangan sampai liburan gagal karena salah kostum! Simak panduan lengkap persiapan wisata offroad, mulai dari outfit, perlengkapan medis, hingga tips keamanan.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.websiteanda.com/aset/TimCorporateGathering.webp",
+        "width": 800,
+        "height": 450
+      },
+      "author": { 
+        "@type": "Organization", 
+        "name": "MALANG-OFFROAD Team",
+        "url": "https://www.websiteanda.com"
+      },
+      "publisher": { 
+        "@type": "Organization", 
+        "name": "MALANG-OFFROAD Indonesia", 
+        "logo": { 
+            "@type": "ImageObject", 
+            "url": "https://www.websiteanda.com/logo.png" 
+        } 
+      },
+      "datePublished": "2024-01-15T08:00:00+07:00",
+      "dateModified": "2024-01-15T08:00:00+07:00"
     }
     </script>
 </head>
@@ -117,9 +153,9 @@
     <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" href="index.html">
-                <i class="bi bi-tree-fill me-2 fs-2"></i> GO-OFFROAD
+                <i class="bi bi-tree-fill me-2 fs-2 text-primary-custom"></i> MALANG-OFFROAD
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -161,8 +197,10 @@
 
                         <figure class="mb-4">
                             <img src="aset/TimCorporateGathering.webp" 
-                                 alt="Persiapan tim sebelum berangkat offroad" 
-                                 class="img-fluid rounded-4 shadow w-100" width="800" height="450">
+                                 alt="Persiapan tim dan briefing keselamatan sebelum berangkat wisata offroad di Malang" 
+                                 class="img-fluid rounded-4 shadow w-100" 
+                                 width="800" height="450"
+                                 fetchpriority="high">
                             <figcaption class="img-caption mt-2">Briefing keselamatan adalah langkah awal terpenting sebelum mesin dinyalakan.</figcaption>
                         </figure>
                     </div>
@@ -217,7 +255,7 @@
                         <p>Meskipun Anda berada di dalam Jeep, cipratan lumpur seringkali masuk melalui jendela saat bermanuver di genangan air. Sensasi "kotor-kotoran" inilah yang dicari! Oleh karena itu, wajib hukumnya membawa satu set pakaian ganti lengkap (termasuk pakaian dalam) dan handuk kecil.</p>
 
                         <div class="promo-banner">
-                            <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20tanya%20paket%20offroad%20untuk%20pemula." target="_blank">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20tanya%20paket%20offroad%20untuk%20pemula." target="_blank" aria-label="Tanya paket pemula via Whatsapp">
                                 <div class="promo-overlay">
                                     <span class="badge bg-warning text-dark align-self-start mb-2">PAKET PEMULA</span>
                                     <h3 class="fw-bold mb-2">Baru Pertama Kali Offroad?</h3>
@@ -286,10 +324,10 @@
                         <div class="d-flex align-items-center flex-wrap gap-2 mb-4">
                             <span class="fw-bold me-2">Bagikan Tips Ini:</span>
                             <div class="share-buttons">
-                                <a href="whatsapp://send?text=Cek tips persiapan offroad ini biar ga salah kostum: https://www.websiteanda.com/blog/persiapan-offroad" class="btn btn-wa"><i class="bi bi-whatsapp"></i></a>
-                                <a href="#" class="btn btn-fb"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="btn btn-tw"><i class="bi bi-twitter-x"></i></a>
-                                <button onclick="copyLink()" class="btn btn-link"><i class="bi bi-link-45deg"></i></button>
+                                <a href="whatsapp://send?text=Cek tips persiapan offroad ini biar ga salah kostum: https://www.websiteanda.com/blog/persiapan-offroad" class="btn btn-wa" aria-label="Share ke WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" class="btn btn-fb" aria-label="Share ke Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-tw" aria-label="Share ke Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <button onclick="copyLink()" class="btn btn-link" aria-label="Copy Link"><i class="bi bi-link-45deg"></i></button>
                             </div>
                         </div>
 
@@ -298,7 +336,7 @@
                                 <i class="bi bi-shield-check fs-1 text-primary-custom"></i>
                             </div>
                             <div>
-                                <h5 class="fw-bold mb-1">Safety Team GO-OFFROAD</h5>
+                                <h5 class="fw-bold mb-1">Safety Team MALANG-OFFROAD</h5>
                                 <p class="text-muted small mb-2 text-uppercase ls-1">Divisi Operasional & Keselamatan</p>
                                 <p class="mb-0 small">Kami berdedikasi untuk memberikan edukasi mengenai standar keselamatan dalam kegiatan wisata petualangan di Indonesia.</p>
                             </div>
@@ -319,13 +357,13 @@
                             <div class="col-md-6">
                                 <article class="card hover-card h-100 bg-white border-0 shadow-sm">
                                     <div class="position-relative">
-                                        <img src="aset/Adventure.webp" class="card-img-top" alt="Ilustrasi manfaat outbound" loading="lazy" style="height: 250px; object-fit: cover;">
+                                        <img src="aset/Adventure.webp" class="card-img-top" alt="Ilustrasi manfaat outbound bagi karyawan" loading="lazy" style="height: 250px; object-fit: cover;">
                                         <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">Edukasi</span>
                                     </div>
                                     <div class="card-body p-4">
                                         <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 10 Januari 2024</div>
                                         <h5 class="card-title fw-bold mb-3">
-                                            <a href="#" class="text-decoration-none text-dark stretched-link">Mengapa Perusahaan Perlu Outbound Rutin?</a>
+                                            <a href="blog2.html" class="text-decoration-none text-dark stretched-link">Mengapa Perusahaan Perlu Outbound Rutin?</a>
                                         </h5>
                                         <p class="card-text text-muted small mb-0">Simak kajian bagaimana aktivitas luar ruang dapat meningkatkan produktivitas...</p>
                                     </div>
@@ -335,13 +373,13 @@
                             <div class="col-md-6">
                                 <article class="card hover-card h-100 bg-white border-0 shadow-sm">
                                     <div class="position-relative">
-                                        <img src="aset/AdventureOffroad.webp" class="card-img-top" alt="Ilustrasi jalur offroad" loading="lazy" style="height: 250px; object-fit: cover;">
+                                        <img src="aset/AdventureOffroad.webp" class="card-img-top" alt="Ilustrasi jalur offroad cisadon bogor" loading="lazy" style="height: 250px; object-fit: cover;">
                                         <span class="badge bg-accent-custom text-white position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill" style="background-color: var(--accent-color);">Destinasi</span>
                                     </div>
                                     <div class="card-body p-4">
                                         <div class="small text-muted mb-2"><i class="bi bi-calendar3 me-2"></i> 5 Januari 2024</div>
                                         <h5 class="card-title fw-bold mb-3">
-                                            <a href="#" class="text-decoration-none text-dark stretched-link">Jalur Offroad Paling Hits di Bogor 2024</a>
+                                            <a href="blog3.html" class="text-decoration-none text-dark stretched-link">Jalur Offroad Paling Hits di Bogor 2024</a>
                                         </h5>
                                         <p class="card-text text-muted small mb-0">Ulasan lengkap mengenai rute Cisadon dan Citeko yang menawarkan pemandangan...</p>
                                     </div>
@@ -360,7 +398,7 @@
             <div class="row g-4 justify-content-between">
                 <div class="col-lg-4 mb-4">
                     <a class="navbar-brand fs-3 fw-bold d-flex align-items-center text-white mb-4" href="#">
-                        <i class="bi bi-tree-fill text-primary-custom me-2 fs-2"></i> GO-OFFROAD
+                        <i class="bi bi-tree-fill text-primary-custom me-2 fs-2"></i> MALANG-OFFROAD
                     </a>
                     <p class="pe-lg-4 opacity-75">Partner resmi petualangan Anda. Aman, Profesional, dan Berkesan.</p>
                 </div>
@@ -383,13 +421,13 @@
                     <h5 class="text-white fw-bold mb-4">Kontak</h5>
                      <ul class="list-unstyled d-flex flex-column gap-3 opacity-75">
                         <li class="d-flex align-items-center"><i class="bi bi-whatsapp text-primary-custom me-3 fs-5"></i> +62 812-3456-7890</li>
-                        <li class="d-flex align-items-center"><i class="bi bi-envelope text-primary-custom me-3 fs-5"></i> info@go-offroad.com</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-envelope text-primary-custom me-3 fs-5"></i> info@MALANG-OFFROAD.com</li>
                     </ul>
                 </div>
             </div>
             <hr class="border-secondary my-4 opacity-50">
             <div class="row align-items-center text-center text-md-start opacity-75 small">
-                <div class="col-12">© 2024 GO-OFFROAD Indonesia. All Rights Reserved.</div>
+                <div class="col-12">© 2024 MALANG-OFFROAD Indonesia. All Rights Reserved.</div>
             </div>
         </div>
     </footer>
